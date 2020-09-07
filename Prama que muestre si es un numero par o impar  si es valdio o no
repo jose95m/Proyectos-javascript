@@ -1,0 +1,19 @@
+'use strict'
+
+/*
+Que nos diga si un numero es par o impar
+1 Ventana prompt
+2Si no es valido que nos pida de numero nuevo
+*/
+
+var number = parserInt(prompt('Introduce un numero', 0));
+
+while(isNaN(number)){
+	number = parserInt(prompt("Introduce un numero", 0));
+}
+
+if (number % 2 == 0) {
+	alert("Es un numero par");
+}else{
+	alert("Es impar");
+}
